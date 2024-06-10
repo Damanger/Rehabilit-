@@ -1,0 +1,129 @@
+nav {
+    background-color: #008373;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 4rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.nombre{
+    width: 12rem;
+    cursor: pointer;
+    @media (max-width: 767px){
+        display: none;
+    }
+}
+
+.navbar-items {
+    display: flex;
+    gap: 50px; 
+}
+
+.icon{
+    cursor: pointer;
+}
+
+a{
+    color: white;
+}
+
+.active{
+    border-bottom: 4px solid white;
+    animation: move-border 0.1s ease-in-out;
+}
+
+@keyframes move-border {
+    from {
+        border-bottom-width: 0;
+    }
+
+    to {
+        border-bottom-width: 4px;
+    }
+}
+
+footer {
+    display: none;
+}
+
+@media (max-width: 767px){
+    nav{
+        display: none !important;
+    }
+
+    footer {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        right: 0;
+        background-color: #008373;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000 !important;
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .navigation ul {
+        display: flex;
+        width: 100%;
+        height: 30px;
+        justify-content: space-evenly;
+    }
+
+    .navigation ul li {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        text-align: center;
+        list-style: none;
+        z-index: 1;
+    }
+
+    .navigation ul li a {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navigation ul li a {
+        position: relative;
+        display: block;
+        text-align: center;
+        color: #fff;
+    }
+
+    .navigation ul li.active a {
+        transform: translateY(-20px);
+        background-color: #008373;
+        border: 2px solid #06021b;
+        border-radius: 50%;
+        transition: 0.5s ease-in;
+        display: flex;
+        text-align: center;
+    }
+
+    .active{
+        border-bottom: none;
+    }
+}
