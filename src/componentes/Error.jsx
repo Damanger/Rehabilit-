@@ -1,12 +1,12 @@
 import React from 'react';
-import '../assets/css/error.css';
+import Style from '../assets/css/error.module.css';
 import { Link } from 'react-router-dom';
 
 const Error = () => {
     return (
-        <div className="error-image">
+        <div className={Style.errorImage}>
             <img src="404.png" alt="404" />
-            <Link to="/" className='regresar'><h3>Inicio</h3></Link>
+            <Link to="/" className={Style.regresar}><h3>Inicio</h3></Link>
         </div>
     );
 };

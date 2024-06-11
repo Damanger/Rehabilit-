@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../assets/css/navbar.css';
+import Style from '../assets/css/navbar.module.css';
 import { FaHome, FaUserMd, FaMapMarkerAlt  } from 'react-icons/fa';
 import { NavLink, Link } from 'react-router-dom';
 
@@ -19,21 +19,21 @@ const NavBar = () =>{
     };
     return (
         <>
-            <nav className='navbar-container'>
+            <nav className={Style.navbarContainer}>
                 <Link to="/" onClick={() => handleLinkClick('/')}>
-                    <img src='./re4.1.png' alt='Logo' className="logo" />
+                    <img src='./re4.1.png' alt='Logo' className={Style.logo} />
                 </Link>
                 <Link to="/" onClick={() => handleLinkClick('/')}>
-                    <img src='./re4.2.png' alt="Rehabilité" className='nombre' />
+                    <img src='./re4.2.png' alt="Rehabilité" className={Style.nombre} />
                 </Link>
-                <div className="navbar-items">
-                    <NavLink exact="true" to="/" className={`icon ${activeLink === '/' ? 'active' : ''}`} onClick={() => handleLinkClick('/')}>
+                <div className={Style.navbarItems}>
+                    <NavLink exact="true" to="/" className={`${Style.icon} ${activeLink === '/' ? Style.active : ''}`} onClick={() => handleLinkClick('/')}>
                         <FaHome size={30} />
                     </NavLink>
-                    <NavLink exact="true" to="/info" className={`icon ${activeLink === '/info' ? 'active' : ''}`} onClick={() => handleLinkClick('/info')}>
+                    <NavLink exact="true" to="/info" className={`${Style.icon} ${activeLink === '/info' ? Style.active : ''}`} onClick={() => handleLinkClick('/info')}>
                         <FaUserMd size={30} />
                     </NavLink>
-                    <NavLink exact="true" to="/mapa" className={`icon ${activeLink === '/mapa' ? 'active' : ''}`} onClick={() => handleLinkClick('/mapa')}>
+                    <NavLink exact="true" to="/mapa" className={`${Style.icon} ${activeLink === '/mapa' ? Style.active : ''}`} onClick={() => handleLinkClick('/mapa')}>
                         <FaMapMarkerAlt  size={30} />
                     </NavLink>
                 </div>
