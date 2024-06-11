@@ -33,7 +33,7 @@ const NavBar = () =>{
                     <NavLink exact="true" to="/info" className={`icon ${activeLink === '/info' ? 'active' : ''}`} onClick={() => handleLinkClick('/info')}>
                         <FaUserMd size={30} />
                     </NavLink>
-                    <NavLink exact="true" to="/contacto" className={`icon ${activeLink === '/contacto' ? 'active' : ''}`} onClick={() => handleLinkClick('/contacto')}>
+                    <NavLink exact="true" to="/mapa" className={`icon ${activeLink === '/mapa' ? 'active' : ''}`} onClick={() => handleLinkClick('/mapa')}>
                         <FaMapMarkerAlt  size={30} />
                     </NavLink>
                 </div>

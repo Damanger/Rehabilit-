@@ -27,8 +27,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Inicio/>}/>
             <Route path="/info" element={<AboutUs/>}/>
-            <Route path="/contacto" element={<Mapa/>}/>
-            <Route path="*" element={<><Error/><Navigate to="/not-found" replace /></>}/>
+            <Route path="/mapa" element={<Mapa/>}/>
+            <Route path="*" element={<><Error/><Navigate to="/no-encontrado" replace /></>}/>
           </Routes>
           <Contacto/>
           <Footer/>
