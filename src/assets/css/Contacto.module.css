@@ -8,12 +8,14 @@
     background: #14de36;
     -webkit-animation: pulse-border 1500ms ease-out infinite;
     animation: pulse-border 1500ms ease-out infinite;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     border-radius: 50%;
     color: white;
+    display: grid;
+    place-items: center;
 }
 
 .react-tooltip {
@@ -38,7 +40,7 @@
 
 @media (max-width: 768px) {
     .whats span {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .whats{
         bottom: 7.25rem;
