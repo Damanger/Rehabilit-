@@ -1,0 +1,11 @@
+.figura {
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+    background-color: rgba(0, 131, 115, 0.8);
+    width: 60%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    margin-top: 5.5rem;
+}

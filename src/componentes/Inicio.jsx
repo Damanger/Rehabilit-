@@ -1,12 +1,12 @@
 import React from 'react';
-import '../assets/css/inicio.css'
+import Style from '../assets/css/inicio.module.css'
 
 const Inicio = () =>{
     
     return (
-        <>
-            
-        </>
+        <section>
+            <div className={Style.figura}></div>
+        </section>
     );
 };
 
