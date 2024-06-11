@@ -1,0 +1,47 @@
+.whats {
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    z-index: 2000;
+}
+.whats span{
+    background: #14de36;
+    -webkit-animation: pulse-border 1500ms ease-out infinite;
+    animation: pulse-border 1500ms ease-out infinite;
+    font-size: 2rem;
+    padding: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 50%;
+    color: white;
+}
+
+.react-tooltip {
+    font-size: 1rem;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .whats span {
+        font-size: 1.5rem;
+    }
+    .whats{
+        bottom: 7.25rem;
+        right: 1rem;
+    }
+}

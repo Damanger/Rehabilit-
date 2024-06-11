@@ -4,7 +4,9 @@ import Cargando from './componentes/Cargando';
 import NavBar from './componentes/NavBar';
 import Inicio from './componentes/Inicio'
 import AboutUs from './componentes/AboutUs'
+import Mapa from './componentes/Mapa'
 import Contacto from './componentes/Contacto';
+import Footer from './componentes/Footer';
 import Error from './componentes/Error'
 import { BrowserRouter as Router, Routes, Route, Navigate  } from 'react-router-dom';
 
@@ -21,12 +23,16 @@ function App() {
         {isLoading ? (
         <Cargando imagen="re2.jpg" />
       ):(
-        <Routes>
-          <Route path="/" element={<Inicio/>}/>
-          <Route path="/info" element={<AboutUs/>}/>
-          <Route path="/contacto" element={<Contacto/>}/>
-          <Route path="*" element={<><Error/><Navigate to="/not-found" replace /></>}/>
-        </Routes>
+        <>
+          <Routes>
+            <Route path="/" element={<Inicio/>}/>
+            <Route path="/info" element={<AboutUs/>}/>
+            <Route path="/contacto" element={<Mapa/>}/>
+            <Route path="*" element={<><Error/><Navigate to="/not-found" replace /></>}/>
+          </Routes>
+          <Contacto/>
+          <Footer/>
+        </>
         )}
       </Router>
     </div>

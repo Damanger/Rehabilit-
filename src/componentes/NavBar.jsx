@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../assets/css/navbar.css';
-import { FaHome, FaUserMd , FaEnvelope } from 'react-icons/fa';
+import { FaHome, FaUserMd, FaMapMarkerAlt  } from 'react-icons/fa';
 import { NavLink, Link } from 'react-router-dom';
 
 const NavBar = () =>{
@@ -34,36 +34,10 @@ const NavBar = () =>{
                         <FaUserMd size={30} />
                     </NavLink>
                     <NavLink exact="true" to="/contacto" className={`icon ${activeLink === '/contacto' ? 'active' : ''}`} onClick={() => handleLinkClick('/contacto')}>
-                        <FaEnvelope size={30} />
+                        <FaMapMarkerAlt  size={30} />
                     </NavLink>
                 </div>
             </nav>
-            <footer className="navigation">
-                <ul>
-                    <li className={`list ${activeLink === '/' ? 'active' : ''}`}>
-                        <Link to="/" onClick={() => handleLinkClick('/')}>
-                            <span className="icon">
-                                <FaHome size={30} />
-                            </span>
-                        </Link>
-                    </li>
-                    <li className={`list ${activeLink === '/info' ? 'active' : ''}`}>
-                        <Link to="/info" onClick={() => handleLinkClick('/info')}>
-                            <span className="icon">
-                                <FaUserMd size={30} />
-                            </span>
-                        </Link>
-                    </li>
-                    <li className={`list ${activeLink === '/contacto' ? 'active' : ''}`}>
-                        <Link to="/contacto" onClick={() => handleLinkClick('/contacto')}>
-                            <span className="icon">
-                                <FaEnvelope size={30} />
-                            </span>
-                        </Link>
-                    </li>
-                    <div className="indicator"></div>
-                </ul>
-            </footer>
         </>
     );
 };
