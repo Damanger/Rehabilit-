@@ -27,13 +27,13 @@ const NavBar = () =>{
                     <img src='./re4.2.png' alt="Rehabilité" className={Style.nombre} />
                 </Link>
                 <div className={Style.navbarItems}>
-                    <NavLink exact="true" to="/" className={`${Style.icon} ${activeLink === '/' ? Style.active : ''}`} onClick={() => handleLinkClick('/')}>
+                    <NavLink exact="true" to="/" aria-label="inicio" className={`${Style.icon} ${activeLink === '/' ? Style.active : ''}`} onClick={() => handleLinkClick('/')}>
                         <FaHome size={30} />
                     </NavLink>
-                    <NavLink exact="true" to="/info" className={`${Style.icon} ${activeLink === '/info' ? Style.active : ''}`} onClick={() => handleLinkClick('/info')}>
+                    <NavLink exact="true" to="/info" aria-label="información" className={`${Style.icon} ${activeLink === '/info' ? Style.active : ''}`} onClick={() => handleLinkClick('/info')}>
                         <FaUserMd size={30} />
                     </NavLink>
-                    <NavLink exact="true" to="/mapa" className={`${Style.icon} ${activeLink === '/mapa' ? Style.active : ''}`} onClick={() => handleLinkClick('/mapa')}>
+                    <NavLink exact="true" to="/mapa" aria-label="mapa" className={`${Style.icon} ${activeLink === '/mapa' ? Style.active : ''}`} onClick={() => handleLinkClick('/mapa')}>
                         <FaMapMarkerAlt  size={30} />
                     </NavLink>
                 </div>
