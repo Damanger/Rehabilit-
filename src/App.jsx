@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <Router>
         {isLoading ? (
-        <Cargando imagen="re2.jpg" />
+        <Cargando imagen="re2.webp" />
       ):(
         <>
           <Routes>

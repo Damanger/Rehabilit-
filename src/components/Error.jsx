@@ -9,7 +9,7 @@ const Error = () => {
         <>
             <NavBar/>
             <div className={Style.errorImage}>
-                <img src="404.png" alt="404" />
+                <img src="404.webp" alt="404" />
                 <Link to="/" className={Style.regresar}><h3>Inicio</h3></Link>
             </div>
             <Footer/>

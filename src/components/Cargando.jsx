@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../assets/css/cargando.css';
+import Style from'../assets/css/cargando.module.css';
 
 const Cargando = ({ imagen }) => {
     const [mostrarLoader, setMostrarLoader] = useState(true);
@@ -13,8 +13,10 @@ const Cargando = ({ imagen }) => {
     }, []);
 
     return (
-        <div className={`cargando ${mostrarLoader ? 'visible' : 'oculto'}`}>
-            <img src={imagen} alt="Cargando..." />
+        <div className={Style.carga}>
+            <div className={`${Style.cargando} ${mostrarLoader ? 'visible' : 'oculto'}`}>
+                <img className={Style.imagen} src={imagen} alt="Cargando..." />
+            </div>
         </div>
     );
 };

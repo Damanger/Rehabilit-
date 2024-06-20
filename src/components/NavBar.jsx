@@ -21,10 +21,10 @@ const NavBar = () =>{
         <>
             <nav className={Style.navbarContainer}>
                 <Link to="/" onClick={() => handleLinkClick('/')}>
-                    <img src='./re4.1.png' alt='Logo' className={Style.logo} />
+                    <img src='./re4.1.webp' alt='Logo' className={Style.logo} />
                 </Link>
                 <Link to="/" onClick={() => handleLinkClick('/')}>
-                    <img src='./re4.2.png' alt="Rehabilité" className={Style.nombre} />
+                    <img src='./re4.2.webp' alt="Rehabilité" className={Style.nombre} />
                 </Link>
                 <div className={Style.navbarItems}>
                     <NavLink exact="true" to="/" aria-label="inicio" className={`${Style.icon} ${activeLink === '/' ? Style.active : ''}`} onClick={() => handleLinkClick('/')}>
