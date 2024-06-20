@@ -1,9 +1,11 @@
 nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
     background-color: #008373;
     color: #fff;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
 }
 
 .navbarContainer {

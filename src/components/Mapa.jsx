@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
+import NavBar from './NavBar';
+import Footer from './Footer';
 import L from 'leaflet';
 import 'leaflet-routing-machine';
 import 'leaflet/dist/leaflet.css';
@@ -93,7 +95,7 @@ const Mapa = () => {
                 const distanceKm = (summary.totalDistance / 1000).toFixed(2); // Convertir metros a kilómetros y redondear a 2 decimales
                 const timeMin = (summary.totalTime / 60).toFixed(2); // Convertir segundos a minutos y redondear a 2 decimales
 
-                toast.success(`Ruta encontrada: Recorrido de ${distanceKm} kilómetros en un tiempo de ${timeMin} minutos aproximadamente`);
+                toast.success(`Recorrido de ${distanceKm} kilómetros en un tiempo de ${timeMin} minutos aproximadamente (en vehículo)`);
             }).addTo(mapRef.current);
 
             const routingContainer = document.querySelector('.leaflet-routing-container');
@@ -108,15 +110,19 @@ const Mapa = () => {
     };
 
     return (
-        <section className={Style.fondoMapa}>
-            <div className={Style.contenedorTitulo}>
-                <span className={Style.arribaTitulo}>¡Visítanos!</span><h1 className={Style.titulo}>Rehabilité Oaxaca</h1>
-            </div>
-            <div id="mi_mapa" style={{ width: '90%', height: '31rem', border: 'solid 2px #008373', borderRadius:'10px' }}></div>
-            <div style={{ textAlign: 'center', marginTop: '1rem' }}>
-                {buttonVisible && <button onClick={handleShareLocationClick} className={Style.botonMapa}>¿Cómo llegar? →</button>}
-            </div>
-        </section>
+        <>
+            <NavBar/>
+            <section className={Style.fondoMapa}>
+                <div className={Style.contenedorTitulo}>
+                    <span className={Style.arribaTitulo}>¡Visítanos!</span><h1 className={Style.titulo}>Rehabilité Oaxaca</h1>
+                </div>
+                <div id="mi_mapa" style={{ width: '90%', height: '50%', border: 'solid 2px #008373', borderRadius:'10px' }}></div>
+                <div style={{ textAlign: 'center', marginTop: '1rem' }}>
+                    {buttonVisible && <button onClick={handleShareLocationClick} className={Style.botonMapa}>¿Cómo llegar? →</button>}
+                </div>
+            </section>
+            <Footer/>
+        </>
     );
 }
 

@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import './App.css';
-import Cargando from './componentes/Cargando';
-import NavBar from './componentes/NavBar';
-import Inicio from './componentes/Inicio'
-import AboutUs from './componentes/AboutUs'
-import Mapa from './componentes/Mapa'
-import Contacto from './componentes/Contacto';
-import Footer from './componentes/Footer';
-import Error from './componentes/Error'
+import Cargando from './components/Cargando';
+import Inicio from './components/Inicio'
+import AboutUs from './components/AboutUs'
+import Mapa from './components/Mapa'
+import Contacto from './components/Contacto';
+import Error from './components/Error'
 import { BrowserRouter as Router, Routes, Route, Navigate  } from 'react-router-dom';
 
 function App() {
@@ -19,7 +17,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <NavBar/>
         {isLoading ? (
         <Cargando imagen="re2.jpg" />
       ):(
@@ -31,7 +28,6 @@ function App() {
             <Route path="*" element={<><Error/><Navigate to="/no-encontrado" replace /></>}/>
           </Routes>
           <Contacto/>
-          <Footer/>
         </>
         )}
       </Router>

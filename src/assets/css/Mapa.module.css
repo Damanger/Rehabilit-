@@ -18,7 +18,7 @@
     margin-top: 1rem;
     font-size: 3rem;
     color: rgba(0, 131, 115, 0.75);
-    margin-bottom: -3rem;
+    margin-bottom: -2rem;
 }
 
 .titulo{
@@ -75,7 +75,12 @@
 
 @media screen and (max-width: 430px){
     .titulo{
-        font-size: 4rem;
+        font-size: 3rem;
     }
-    
+}
+
+@media screen and (max-width: 375px){
+    .titulo{
+        font-size: 2rem;
+    }
 }
