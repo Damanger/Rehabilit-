@@ -1,14 +1,30 @@
 .figura {
     clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
-    background-color: rgba(0, 131, 115, 0.75);
+    background-color: rgba(0, 131, 115, 0.7);
     height: 100vh;
     width: 100vw;
     z-index: -1;
 }
 
 .figura2 {
-    clip-path: polygon(0 0, 40% 0, 60% 100%, 0 100%);
-    background-color: rgba(0, 131, 115, 0.75);
+    clip-path: polygon(0 0, 60% 0, 40% 100%, 0% 100%);
+    background-color: rgba(0, 131, 115, 0.7);
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.figura3{
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    background-color: rgba(0, 131, 115, 0.7);
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.figura4{
+    clip-path: polygon(100% 0, 0 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+    background-color: rgba(0, 131, 115, 0.7);
     height: 100vh;
     width: 100vw;
     z-index: -1;

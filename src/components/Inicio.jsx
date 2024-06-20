@@ -48,6 +48,10 @@ const Inicio = () =>{
                         className={`${Style.circulo} ${activeSection === 2 ? Style.active : ''}`} 
                         onClick={() => scrollToSection(2)}
                     ></div>
+                    <div 
+                        className={`${Style.circulo} ${activeSection === 3 ? Style.active : ''}`} 
+                        onClick={() => scrollToSection(3)}
+                    ></div>
                 </aside>
                 <section>
                     <div className={Style.figura}></div>
@@ -56,7 +60,10 @@ const Inicio = () =>{
                     <div className={Style.figura2}></div>
                 </section>
                 <section>
-                    <div className={Style.figura}></div>
+                    <div className={Style.figura3}></div>
+                </section>
+                <section>
+                    <div className={Style.figura4}></div>
                 </section>
             <Footer/>
         </>

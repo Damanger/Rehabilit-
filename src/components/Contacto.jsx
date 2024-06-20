@@ -1,7 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { Tooltip } from 'react-tooltip';
 import Style from '../assets/css/Contacto.module.css';
 
 const Contacto = () => {
@@ -16,7 +15,6 @@ const Contacto = () => {
                     data-tooltip-content="Contáctanos">
                     <span><FontAwesomeIcon icon={faWhatsapp} /></span>
                 </a>
-                <Tooltip id="whatsapp-tooltip" place="left" type="dark" effect="solid"/>
             </div>
         </>
     )
