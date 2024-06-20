@@ -13,7 +13,7 @@ function App() {
 
   setTimeout(() => {
     setIsLoading(false);
-  }, 2000);
+  }, 600);
   return (
     <div className="App">
       <Router>
