@@ -7,7 +7,7 @@ const Cargando = ({ imagen }) => {
     useEffect(() => {
         const timeout = setTimeout(() => {
             setMostrarLoader(false);
-        }, 1500);
+        }, 600);
 
         return () => clearTimeout(timeout);
     }, []);
