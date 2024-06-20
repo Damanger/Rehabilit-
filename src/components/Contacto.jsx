@@ -8,7 +8,7 @@ const Contacto = () => {
     return (
         <>
             <div className={Style.whats}>
-                <a href="https://wa.me/5219515093674?text=Buen%20d%C3%ADa,%20quisiera%20saber%20si%20tiene%20fechas%20disponibles." 
+                <a href="https://wa.me/5219515093674?text=Buen%20d%C3%ADa,%20quisiera%20hacer%20una%20consulta%20:)." 
                     target="_blank" 
                     rel='noreferrer' 
                     aria-label="Whatsapp"
