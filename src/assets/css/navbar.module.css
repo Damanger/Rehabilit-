@@ -16,6 +16,7 @@ nav {
 
 .logo {
     cursor: pointer;
+    margin-left: 1rem;
 }
 
 .nombre{
@@ -28,7 +29,7 @@ nav {
 
 .navbarItems {
     display: flex;
-    gap: 50px; 
+    gap: 40px; 
 }
 
 .icon{
@@ -39,9 +40,24 @@ a{
     color: white;
 }
 
+.icon:nth-last-child(1){
+    margin-right: 1rem;
+}
+
 .active{
     border-bottom: 4px solid white;
     animation: move-border 0.1s ease-in-out;
+}
+
+@media screen and (max-width: 767px){
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .icono{
+        width: 25px;
+        height: 25px;
+    }
 }
 
 @keyframes move-border {
