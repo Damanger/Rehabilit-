@@ -20,10 +20,10 @@ const NavBar = () =>{
     return (
         <>
             <nav className={Style.navbarContainer}>
-                <Link to="/" onClick={() => handleLinkClick('/')}>
+                <Link to="/" aria-label="inicio" onClick={() => handleLinkClick('/')}>
                     <img src='./re4.1.webp' alt='Logo' className={Style.logo} />
                 </Link>
-                <Link to="/" onClick={() => handleLinkClick('/')}>
+                <Link to="/" aria-label="inicio" onClick={() => handleLinkClick('/')}>
                     <img src='./re4.2.webp' alt="Rehabilité" className={Style.nombre} />
                 </Link>
                 <div className={Style.navbarItems}>
