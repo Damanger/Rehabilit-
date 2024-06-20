@@ -21,7 +21,7 @@ const NavBar = () =>{
         <>
             <nav className={Style.navbarContainer}>
                 <Link to="/" aria-label="inicio" onClick={() => handleLinkClick('/')}>
-                    <img src='./re4.1.webp' alt='Logo' className={Style.logo} />
+                    <img src='./re4.1.webp' alt='Logo' width="64" height="64" className={Style.logo} />
                 </Link>
                 <Link to="/" aria-label="inicio" onClick={() => handleLinkClick('/')}>
                     <img src='./re4.2.webp' alt="Rehabilité" className={Style.nombre} />
