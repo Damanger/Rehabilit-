@@ -1,10 +1,44 @@
 .figura {
-    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
-    background-color: rgba(0, 131, 115, 0.8);
-    width: 60%;
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    background-color: rgba(0, 131, 115, 0.75);
     height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
+    width: 100vw;
     z-index: -1;
+}
+
+.figura2 {
+    clip-path: polygon(0 0, 40% 0, 60% 100%, 0 100%);
+    background-color: rgba(0, 131, 115, 0.75);
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.aqui {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    z-index: 100;
+}
+
+.circulo {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.circulo.active {
+    background-color: #008373;
+    border: 1px solid black;
 }
